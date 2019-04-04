@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: sauravs
+Build-Jdk: 11.0.1
+Implementation-Title: WebApp
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: com.saurav
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-boot
+ -starter-parent/WebApp
+Created-By: Maven Integration for Eclipse
+
