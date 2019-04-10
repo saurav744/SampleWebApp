@@ -46,7 +46,7 @@ spec:
                     "-instances=neon-camp-233207:us-central1:mysql-web=tcp:3306",
                     "-credential_file=/secrets/cloudsql/credentials.json"]
           volumeMounts:
-            - name: cloudsql-instance-credentials
+            - name: cloudsql-oauth-credentials
               mountPath: /secrets/cloudsql
               readOnly: true
             - name: ssl-certs
@@ -56,9 +56,9 @@ spec:
         # [END proxy_container]
       # [START volumes]
       volumes:
-        - name: cloudsql-instance-credentials
+        - name: cloudsql-oauth-credentials
           secret:
-            secretName: cloudsql-instance-credentials
+            secretName: cloudsql-oauth-credentials
         - name: ssl-certs
           hostPath:
             path: /etc/ssl/certs
